@@ -1,4 +1,4 @@
-FROM lucee/lucee4:latest
+FROM lucee/lucee51-nginx
 
 RUN apt-get update && \
 	apt-get install -y \
