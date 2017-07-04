@@ -1,4 +1,4 @@
-FROM lucee/lucee52:latest
+FROM lucee/lucee51:5.1.3.18
 
 RUN apt-get update && \
 	apt-get install -y \
