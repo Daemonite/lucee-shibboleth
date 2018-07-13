@@ -3,7 +3,7 @@ FROM lucee/lucee52:latest
 RUN apt-get update && \
 	apt-get install -y \
 		supervisor \
-		apache2 apache2.2-common \
+		apache2 \
 		libapache2-mod-shib2 \
 	&& \
 	apt-get clean && \
