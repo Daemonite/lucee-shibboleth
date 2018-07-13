@@ -1,4 +1,4 @@
-FROM lucee/lucee51:latest
+FROM lucee/lucee52:latest
 
 RUN apt-get update && \
 	apt-get install -y \
