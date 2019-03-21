@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.3.1.95
+FROM lucee/lucee:5.3.1.97-SNAPSHOT
 
 RUN apt-get update && \
 	apt-get install -y \
