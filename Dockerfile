@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.3.1.102
+FROM lucee/lucee:5.3.2.74-RC
 
 RUN apt-get update && \
 	apt-get install -y \
