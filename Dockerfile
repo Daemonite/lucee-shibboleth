@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.3.9.141-SNAPSHOT
+FROM lucee/5.3.9.142-SNAPSHOT-tomcat9.0-jdk8-openjdk
 
 RUN apt-get update && \
 	apt-get install -y \
