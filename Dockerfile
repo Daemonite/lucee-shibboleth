@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.3.9.142-SNAPSHOT-tomcat9.0-jdk8-openjdk
+FROM lucee/lucee:5.3.9.143-SNAPSHOT-tomcat9.0-jdk11-openjdk-buster
 
 RUN apt-get update && \
 	apt-get install -y \
