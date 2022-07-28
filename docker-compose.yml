@@ -2,12 +2,14 @@ lucee-shibboleth:
   build: .
   environment:
     - "VIRTUAL_HOST=lucee-shibboleth.*"
+  ports:
+    - 80:80
   volumes:
-    - /workbench/lucee-shibboleth/www:/var/www
-    - /workbench/lucee-shibboleth/config/apache2/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
-    - /workbench/lucee-shibboleth/config/shibboleth/shibboleth2-testshib.xml:/etc/shibboleth/shibboleth2.xml
-    - /workbench/lucee-shibboleth/logs/apache2:/var/log/apache2
-    - /workbench/lucee-shibboleth/logs/lucee:/opt/lucee/web/logs
-    - /workbench/lucee-shibboleth/logs/shibboleth:/var/log/shibboleth
-    - /workbench/lucee-shibboleth/logs/supervisor:/var/log/supervisor
-    - /workbench/lucee-shibboleth/logs/tomcat:/usr/local/tomcat/logs
+    - /mnt/e/workbench/dae/lucee-shibboleth/www:/var/www
+    - /mnt/e/workbench/dae/lucee-shibboleth/config/apache2/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    - /mnt/e/workbench/dae/lucee-shibboleth/config/shibboleth3:/etc/shibboleth
+    - /mnt/e/workbench/dae/lucee-shibboleth/logs/apache2:/var/log/apache2
+    - /mnt/e/workbench/dae/lucee-shibboleth/logs/lucee:/opt/lucee/web/logs
+    - /mnt/e/workbench/dae/lucee-shibboleth/logs/shibboleth:/var/log/shibboleth
+    - /mnt/e/workbench/dae/lucee-shibboleth/logs/supervisor:/var/log/supervisor
+    - /mnt/e/workbench/dae/lucee-shibboleth/logs/tomcat:/usr/local/tomcat/logs
