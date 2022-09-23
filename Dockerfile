@@ -1,14 +1,14 @@
 FROM docker.io/library/tomcat:9.0-jdk8-openjdk
 
-ENV LUCEE_IMAGE=lucee/lucee:5.2.9.31
+ENV LUCEE_IMAGE=lucee/lucee:5.3.9.160
 ENV TOMCAT_VERSION=9.0
 ENV TOMCAT_JAVA_VERSION=jdk8-openjdk
 ENV TOMCAT_BASE_IMAGE=
-ENV LUCEE_MINOR=5.2
+ENV LUCEE_MINOR=5.3
 ENV LUCEE_SERVER=
 ENV LUCEE_VARIANTS=
-ENV LUCEE_VERSION=5.2.9.31
-ENV LUCEE_JAR_URL=https://release.lucee.org/rest/update/provider/loader/5.2.9.31
+ENV LUCEE_VERSION=5.3.9.160
+ENV LUCEE_JAR_URL=https://release.lucee.org/rest/update/provider/loader/5.3.9.160
 
 RUN echo ver: $LUCEE_VERSION minor: $LUCEE_MINOR server: $LUCEE_SERVER variant: $LUCEE_VARIANT jar: $LUCEE_JAR_URL
 
@@ -62,6 +62,7 @@ RUN /usr/local/tomcat/bin/prewarm.sh && /usr/local/tomcat/bin/prewarm.sh
 # --------
 
 RUN apt-get update && \
+    apt-get upgrade -y && \
 	apt-get install -y \
 		supervisor \
 		apache2 \
