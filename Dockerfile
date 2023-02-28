@@ -1,14 +1,14 @@
 FROM docker.io/library/tomcat:9.0-jdk11-openjdk
 
-ENV LUCEE_IMAGE=lucee/lucee:5.3.10.97
+ENV LUCEE_IMAGE=lucee/lucee:5.3.10.120
 ENV TOMCAT_VERSION=9.0
 ENV TOMCAT_JAVA_VERSION=jdk11-openjdk
 ENV TOMCAT_BASE_IMAGE=
 ENV LUCEE_MINOR=5.3
 ENV LUCEE_SERVER=
 ENV LUCEE_VARIANTS=
-ENV LUCEE_VERSION=5.3.10.97
-ENV LUCEE_JAR_URL=https://cdn.lucee.org/lucee-5.3.10.97.jar
+ENV LUCEE_VERSION=5.3.10.120
+ENV LUCEE_JAR_URL=https://cdn.lucee.org/lucee-5.3.10.120.jar
 
 RUN echo ver: $LUCEE_VERSION minor: $LUCEE_MINOR server: $LUCEE_SERVER variant: $LUCEE_VARIANT jar: $LUCEE_JAR_URL
 
