@@ -8,7 +8,7 @@ ENV LUCEE_MINOR=5.3
 ENV LUCEE_SERVER=
 ENV LUCEE_VARIANTS=
 ENV LUCEE_VERSION=5.3.10.97
-ENV LUCEE_JAR_URL=https://release.lucee.org/rest/update/provider/loader/5.3.10.97
+ENV LUCEE_JAR_URL=https://cdn.lucee.org/lucee-5.3.10.97.jar
 
 RUN echo ver: $LUCEE_VERSION minor: $LUCEE_MINOR server: $LUCEE_SERVER variant: $LUCEE_VARIANT jar: $LUCEE_JAR_URL
 
