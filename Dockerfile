@@ -7,8 +7,8 @@ ENV TOMCAT_BASE_IMAGE=
 ENV LUCEE_MINOR=5.3
 ENV LUCEE_SERVER=
 ENV LUCEE_VARIANTS=
-ENV LUCEE_VERSION=5.3.9.160
-ENV LUCEE_JAR_URL=https://release.lucee.org/rest/update/provider/loader/5.3.9.160
+ENV LUCEE_VERSION=5.3.9.173
+ENV LUCEE_JAR_URL=https://release.lucee.org/rest/update/provider/loader/5.3.9.173
 
 RUN echo ver: $LUCEE_VERSION minor: $LUCEE_MINOR server: $LUCEE_SERVER variant: $LUCEE_VARIANT jar: $LUCEE_JAR_URL
 
