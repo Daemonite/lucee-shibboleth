@@ -1,6 +1,6 @@
 FROM docker.io/library/tomcat:9.0-jdk11-openjdk
 
-ENV LUCEE_IMAGE=lucee/lucee:5.3.9.160
+ENV LUCEE_IMAGE=lucee/lucee:5.3.9.173
 ENV TOMCAT_VERSION=9.0
 ENV TOMCAT_JAVA_VERSION=jdk11-openjdk
 ENV TOMCAT_BASE_IMAGE=
