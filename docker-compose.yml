@@ -3,11 +3,11 @@ lucee-shibboleth:
   environment:
     - "VIRTUAL_HOST=lucee-shibboleth.*"
   volumes:
-    - /workbench/lucee-shibboleth/www:/var/www
-    - /workbench/lucee-shibboleth/config/apache2/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
-    - /workbench/lucee-shibboleth/config/shibboleth/shibboleth2-testshib.xml:/etc/shibboleth/shibboleth2.xml
-    - /workbench/lucee-shibboleth/logs/apache2:/var/log/apache2
-    - /workbench/lucee-shibboleth/logs/lucee:/opt/lucee/web/logs
-    - /workbench/lucee-shibboleth/logs/shibboleth:/var/log/shibboleth
-    - /workbench/lucee-shibboleth/logs/supervisor:/var/log/supervisor
-    - /workbench/lucee-shibboleth/logs/tomcat:/usr/local/tomcat/logs
+    - ./www:/var/www
+    - ./config/apache2/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    - ./config/shibboleth/shibboleth2-testshib.xml:/etc/shibboleth/shibboleth2.xml
+    - ./logs/apache2:/var/log/apache2
+    - ./logs/lucee:/opt/lucee/web/logs
+    - ./logs/shibboleth:/var/log/shibboleth
+    - ./logs/supervisor:/var/log/supervisor
+    - ./logs/tomcat:/usr/local/tomcat/logs

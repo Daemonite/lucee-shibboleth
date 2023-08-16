@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.3.9.143-SNAPSHOT-tomcat9.0-jdk11-openjdk-buster
+FROM lucee/lucee:5.3.12.1-tomcat9.0-jdk11-temurin-focal
 
 RUN apt-get update && \
 	apt-get install -y \
