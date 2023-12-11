@@ -1,4 +1,4 @@
-FROM lucee/lucee:5.4.3.16
+FROM lucee/lucee:5.4.4.38
 
 RUN apt-get update && \
     apt-get upgrade -y && \
