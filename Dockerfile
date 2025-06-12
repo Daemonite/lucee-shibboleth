@@ -61,7 +61,8 @@ RUN /usr/local/tomcat/bin/prewarm.sh && /usr/local/tomcat/bin/prewarm.sh
 
 # --------
 
-RUN apt-get update && \
+RUN apt-get clean && \
+	apt-get update && \
     apt-get upgrade -y && \
 	apt-get install -y \
 		supervisor \
