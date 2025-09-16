@@ -1,4 +1,4 @@
-FROM lucee/lucee:6.2.2.38-SNAPSHOT
+FROM lucee/lucee:6.2.2.91
 
 RUN apt-get update && \
     apt-get upgrade -y && \
